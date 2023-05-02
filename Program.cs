@@ -38,7 +38,7 @@
 
         var result = groupedData.GroupBy(gd => gd.DistinctSongCount)
                                     .Select(g => new { DistinctPlayCount = g.Key, ClientCount = g.Count() })
-                                    .OrderByDescending(x => x.DistinctPlayCount);
+                                    .OrderBy(x => x.DistinctPlayCount);
 
         // Generate the output table and write to CSV file
         using (var writer = new StreamWriter("output.csv"))
