@@ -1,0 +1,12 @@
+# Ignore VSCode files
+.vscode/
+
+# Ignore compiled output
+bin/
+obj/
+
+# Ignore data files
+deneme.csv
+# exhibitA-input.csv
+output.csv
+
